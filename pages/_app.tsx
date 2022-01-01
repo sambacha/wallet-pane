@@ -4,7 +4,13 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Hydrate } from 'react-query/hydration';
 import { globalStyles } from '@theme';
 
-export default function App({ Component, pageProps }) {
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  console.log(metric)
+}
+
+export default function App({ Component, pageProps }: AppProps) {
   const [queryClient] = React.useState(() => new QueryClient());
   globalStyles();
   return (

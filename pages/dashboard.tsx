@@ -18,7 +18,7 @@ import { AddressesBalances, ChainId } from '@features/wallet';
 const fetchBalances = ({ address }) =>
   fetch(`/api/${address}/tokens`).then(async (d) => {
     const r = await d.json();
-    if (!d.ok) throw new Error('Opss something went wrong');
+    if (!d.ok) throw new Error('Error: Fetch Balances Exception');
     return r;
   }) as Promise<AddressesBalances>;
 
