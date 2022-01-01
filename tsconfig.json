@@ -31,8 +31,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "pages/_document.tsx",
-    "stitches.config.ts"
+    "**/*.tsx"
   ]
 }

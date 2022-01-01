@@ -1,12 +1,13 @@
 {
   "name": "application3",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "NEXT_TELEMETRY_DISABLED=1 npx next dev",
     "build": "NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production npx next build",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start",
     "lint": "npx next lint",
+    "fmt": "npx prettier --config .prettierrc.json --write '**/*.{ts,tsx}'",
     "debug": "NEXT_TELEMETRY_DEBUG=1 npx next dev",
     "telemetry": "npx next telemetry disable",
     "analyze": "cross-env ANALYZE=true next build",
@@ -51,6 +52,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-loading": "^2.0.3",
+    "react-loading-skeleton": "^3.0.2",
     "react-masonry-css": "^1.0.16",
     "react-query": "^3.29.0",
     "react-responsive-masonry": "^2.1.3",

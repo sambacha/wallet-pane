@@ -5,7 +5,10 @@ import { addressesFromQueryString } from '@lib/addressesFromQueryString';
 import ens from '@lib/ens';
 import { Text } from '@components/base/Text';
 import { View } from '@components/base/View';
-import { LoadingIndicator } from '@components/base/LoadingIndicator';
+import {
+  LoadingIndicator,
+  SkeletonLoading,
+} from '@components/base/LoadingIndicator';
 import { useQueriesTyped } from '@components/hooks/useQueriesTyped';
 import { TrackingAddresses } from '@components/TrackingAddresses';
 import { TokenList } from '@components/TokenList';
@@ -154,10 +157,10 @@ export default function App({ initialAddresses, initialAddressChainFilter }) {
           >
             {isLoading ? (
               <View css={{ flexDirection: 'column', alignItems: 'center' }}>
-                <LoadingIndicator />
-                <Text css={{ mt: 5, fontWeight: '$medium', fontSize: '$sm' }}>
-                  Loading
-                </Text>
+                <SkeletonLoading />
+                <Text
+                  css={{ mt: 5, fontWeight: '$medium', fontSize: '$sm' }}
+                ></Text>
               </View>
             ) : (
               <TokenList
