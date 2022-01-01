@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: optional;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 400 700;
+  font-display: optional;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+}
