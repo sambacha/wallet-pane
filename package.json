@@ -38,6 +38,7 @@
     "cross-env": "^7.0.3",
     "debounce": "^1.2.1",
     "deepmerge": "^4.2.2",
+    "degen": "^0.0.77",
     "ethers": "^5.5.1",
     "framer-motion": "^5.0.0",
     "graphql": "^15.7.1",
